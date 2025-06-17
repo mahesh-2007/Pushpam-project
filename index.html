@@ -8,6 +8,10 @@
    
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="style.css">
+  <!-- AOS CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"/>
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
 </head>
 <body>
   <!-- Navigation Bar -->
@@ -23,64 +27,139 @@
       </button>
       <ul class="nav-links" id="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#brand-partners">Brand Partners</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#institutions">Institutions</a></li>
+        <li><a href="#brand-partners">Brand Partners</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <main>
+<div class="banner-swiper swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="b1.png" alt="Banner 1" class="banner-img">
+    </div>
+    <div class="swiper-slide">
+      <img src="b2.png" alt="Banner 2" class="banner-img">
+    </div>
+    <div class="swiper-slide">
+      <img src="b3.png" alt="Banner 3" class="banner-img">
+    </div>
+    <!-- Add more slides as needed -->
+  </div>
+  <!-- <div class="swiper-pagination"></div> -->
+</div>
+
+  <img src="PushpamGroup_Transparent.png" alt="Pushpam Group Logo" style="height: 400px; width:20em ; background:aliceblue ; border-radius: 10px;" class="logo">
+
+<main>
     <!-- About Section -->
-    <section id="about" class="about-section">
-      <img src="PushpamGroup_Transparent.png" alt="Pushpam Group Logo" class="logo">
-      <div class="section-title">About Pushpam Group</div>
+   <section id="about" class="about-section" data-aos="fade-up">
+  <h3 class="about-founder-heading">Meet Our Founder</h3>
+  <div class="about-content">
+    <img class="founder-photo" src="founder.png" data-aos-delay="900" alt="Founder">
+    <div class="about-text">
+      <h2>JERALD</h2>
       <p>
-  Pushpam Group is a dynamic and diversified organization committed to delivering excellence across multiple sectors. Established with a vision to innovate and lead, we have consistently set benchmarks in quality, reliability, and customer satisfaction. Our journey spans decades of dedicated service, during which we have partnered with renowned brands and institutions to provide tailored solutions that address the evolving needs of our clients.<br><br>
-  At Pushpam Group, we believe in the power of collaboration and continuous improvement. Our team of experienced professionals brings together expertise from various fields, ensuring that every project is executed with precision and care. We take pride in our ethical business practices, transparent operations, and a customer-centric approach that has earned us the trust of businesses and organizations nationwide.<br><br>
-  As we look to the future, Pushpam Group remains focused on expanding our horizons, embracing new challenges, and making a positive impact in every community we serve. Our unwavering commitment to quality and innovation drives us to exceed expectations and set new standards of excellence in all our endeavors.
-</p>
-      
-      <div class="founder-box">
-        <div>
-          <strong>Founder:</strong> <span class="founder-name">[Founder Name]</span><br>
-          <span class="founder-bio">
-            [A short description about the founder, their vision, or achievements.]
-          </span>
-        </div>
-      </div>
-    </section>
-
-  
+        Pushpam Group is a trusted provider of innovative solutions and services across diverse industries, including catering, real estate, and facility management. With a strong focus on quality, efficiency, and customer satisfaction, we deliver customized services that meet the evolving needs of businesses and institutions. Our professional team works with dedication and integrity, ensuring excellence in every project. Over the years, Pushpam Group has earned a reputation for reliability, innovation, and long-term partnerships. We are driven by a mission to create value through smart solutions, helping our clients achieve their goals while maintaining the highest standards of service and professionalism.
+      </p>
+    </div>
+  </div>
+</section>
     <!-- Services Section (move this above Institutions) -->
-
-
-    <section id="services" class="services-section">
+    <section id="services" class="services-section" data-aos="fade-up">
       <div class="section-title">Our Services</div>
       <div class="swiper my-swiper">
   <div class="swiper-wrapper">
+    
     <div class="swiper-slide">
-      <div class="custom-card">
-        <div class="imgbox"></div>
-        <h2>Service 1</h2>
-        <p>Short description for Service 1.</p>
+      <div class="slide-hover-wrap">
+        <img src="d1.png" alt="" class="slide-bg-img">
+        <div class="slide-overlay">
+          <div class="slide-content">
+            <h3>Service Title</h3>
+            <p>Description or details here.</p>
+          </div>
+        </div>
       </div>
     </div>
     <div class="swiper-slide">
-      <div class="custom-card">
-        <div class="imgbox"></div>
-        <h2>Service 2</h2>
-        <p>Short description for Service 2.</p>
+      <div class="slide-hover-wrap">
+        <img src="r1.jpeg" alt="" class="slide-bg-img">
+        <div class="slide-overlay">
+          <div class="slide-content">
+            <h3>Service Title</h3>
+            <p>Description or details here.</p>
+          </div>
+        </div>
       </div>
     </div>
     <div class="swiper-slide">
-      <div class="custom-card">
-        <div class="imgbox"></div>
-        <h2>Service 3</h2>
-        <p>Short description for Service 3.</p>
+      <div class="slide-hover-wrap">
+        <img src="d2.png" alt="" class="slide-bg-img">
+        <div class="slide-overlay">
+          <div class="slide-content">
+            <h3>Service Title</h3>
+            <p>Description or details here.</p>
+          </div>
+        </div>
       </div>
     </div>
+    <div class="swiper-slide">
+      <div class="slide-hover-wrap">
+        <img src="r2.jpeg" alt="" class="slide-bg-img">
+        <div class="slide-overlay">
+          <div class="slide-content">
+            <h3>Service Title</h3>
+            <p>Description or details here.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="slide-hover-wrap">
+        <img src="d1.png" alt="" class="slide-bg-img">
+        <div class="slide-overlay">
+          <div class="slide-content">
+            <h3>Service Title</h3>
+            <p>Description or details here.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="slide-hover-wrap">
+        <img src="r1.jpeg" alt="" class="slide-bg-img">
+        <div class="slide-overlay">
+          <div class="slide-content">
+            <h3>Service Title</h3>
+            <p>Description or details here.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="slide-hover-wrap">
+        <img src="d2.png" alt="" class="slide-bg-img">
+        <div class="slide-overlay">
+          <div class="slide-content">
+            <h3>Service Title</h3>
+            <p>Description or details here.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="slide-hover-wrap">
+        <img src="r2.jpeg" alt="" class="slide-bg-img">
+        <div class="slide-overlay">
+          <div class="slide-content">
+            <h3>Service Title</h3>
+            <p>Description or details here.</p>
+          </div>
+        </div>
+      </div>
+      </div>
     <!-- Add more slides as needed -->
   </div>
   <div class="swiper-pagination"></div>
@@ -89,73 +168,96 @@
 </div>
     </section>
     <!-- Brand Partners Section -->
-    <section id="brand-partners" class="brand-partners-section">
+    <section id="brand-partners" class="brand-partners-section" data-aos="fade-up" >
       <div class="section-title">Brand Partners</div>
-      <div class="brand-cards">
+      <div class="brand-cards" >
         <div class="brand-card">
-          <img src="Britannia Industries.png" alt="Britannia">
+          <img src="Brands/Britannia Industries.png" alt="Britannia" >
           <span>Britannia</span>
         </div>
         <div class="brand-card">
-          <img src="hu.png" alt="Hindustan Unilever">
+          <img src="Brands/hu.png" alt="Hindustan Unilever">
           <span>Hindustan Unilever</span>
         </div>
         <div class="brand-card">
-          <img src="nestle.png" alt="Nestle">
+          <img src="Brands/nestle.png" alt="Nestle">
           <span>Nestle</span>
         </div>
         <div class="brand-card">
-          <img src="Parle Products.png" alt="Parle">
+          <img src="Brands/Parle Products.png" alt="Parle">
           <span>Parle</span>
         </div>
         <div class="brand-card">
-          <img src="Amul.svg" alt="Amul">
+          <img src="Brands/Amul.svg" alt="Amul">
           <span>Amul</span>
         </div>
         <div class="brand-card">
-          <img src="itc.png" alt="ITC">
+          <img src="Brands/itc.png" alt="ITC">
           <span>ITC</span>
         </div>
         <div class="brand-card">
-          <img src="Cadbury Wordmark.svg" alt="Cadbury">
+          <img src="Brands/Cadbury Wordmark.svg" alt="Cadbury">
           <span>Cadbury</span>
         </div>
         <div class="brand-card">
-          <img src="Coca-Cola_logo.svg.png" alt="Coka-Cola">
+          <img src="Brands/Coca-Cola_logo.svg.png" alt="Coka-Cola">
           <span>Coka-Cola</span>
         </div>
         <div class="brand-card">
-          <img src="Patanjali_Logo.svg.png" alt="Patanjali">
-          <span>Patanjali</span>
+          <img src="Brands/lays.png" alt="Lays">
+          <span>Lays</span>
         </div>
         <div class="brand-card">
-          <img src="Godrej New.svg" alt="Godrej">
+          <img src="Brands/Godrej New.svg" alt="Godrej">
           <span>Godrej</span>
         </div>
         <div class="brand-card">
-          <img src="Reliance_Industries_Logo.svg.png" alt="Reliance">
-          <span>Reliance</span>
+          <img src="Brands/unibic.png" alt="Unibic">
+          <span>Unibic</span>
         </div>
         <div class="brand-card">
-          <img src="Pepsico.svg" alt="PepsiCo">
+          <img src="Brands/Pepsico.svg" alt="PepsiCo">
           <span>PepsiCo</span>
         </div>
       </div>
     </section>
-
     <!-- Contact Section -->
-    <section id="contact">
-      <div class="section-title">Contact</div>
-      <p>
-        Email: info@pushpamgroup.com<br>
-        <a href="tel:+911234567890">+91-1234567890</a><br>
-        Address: 123, Chennai, India
-      </p>
+    <section id="contact" class="contact-section" data-aos="fade-up">
+      <div class="contact-container">
+    <h2>Contact Us</h2>
+    <p class="contact-intro">We’d love to hear from you! Reach out to us using any of the methods below.</p>
+    <div class="contact-details" data-aos="fade-right">
+      
+      <div class="contact-item" style="margin-top: 10px;">
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:your@email.com">Pushpam@gmail.com</a>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-phone"></i>
+        <a href="tel:+911234567890">+91-1234567890</a>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <a href="https://www.google.com/maps?q=Your+Address" target="_blank">
+    View on Google Maps
+  </a>
+      </div>
+      <div class="contact-item">
+        <i class="fab fa-whatsapp"></i>
+        <a href="https://wa.me/911234567890" target="_blank">WhatsApp Us</a>
+      </div>
+    </div>
+  </div>
     </section>
+    
   </main>
+    <div class="cr">
+    <p>© 2025 Pushpam Group. All rights reserved.</p>
+    </div>
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
