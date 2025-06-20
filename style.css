@@ -92,7 +92,7 @@ body {
   color: #0fe9f1;
 }
 main {
-  max-width: 1100px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 1em;
 }
@@ -555,4 +555,9 @@ height: 50vh;
   font-size: 1.4em;
   letter-spacing: 1px;
   font-weight: 700;
+}
+.founder-description {
+  font-size: 1.3em;
+  color: aliceblue;
+  line-height: 1.4;
 }

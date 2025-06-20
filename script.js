@@ -17,25 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     once: false     // Only animate once
   });
   // Swiper initialization for both sides preview
-  const swiper = new Swiper('.my-swiper', {
-    slidesPerView:3,
-    spaceBetween: 30,
-    loop: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
-
- 
+  const swiper = 
 
   new Swiper('.your-swiper-class', {
     slidesPerView: 3,
