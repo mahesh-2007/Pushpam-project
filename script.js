@@ -26,9 +26,11 @@ document.addEventListener('DOMContentLoaded', function() {
       0: {
         slidesPerView: 1
       },
+      
       768: {
         slidesPerView: 3
       }
+      
     }
   });
 });
