@@ -106,7 +106,7 @@ section {
   box-shadow: 0 2px 12px rgba(44,62,80,0.08);
   box-sizing: border-box;
   text-align: center;
-  scroll-margin-top: 90px; /* Adjust to your navbar height */
+  scroll-margin-top: 80px; /* Adjust to your navbar height */
 }
 .logo {
   margin-bottom: 1em;
@@ -402,11 +402,19 @@ section {
   opacity: 1;
 }
 .my-swiper .swiper-button-next {
-  right: 0px; /* Move next arrow further right */
+ right: 15px;
+  background: aliceblue;
+  width: 46px;
+  border-radius: 51px;
+  height: 54px;
 }
 
 .my-swiper .swiper-button-prev {
-  left: 0px;  /* Move prev arrow further left */
+  left: 15px;
+  background: aliceblue;
+  width: 46px;
+  border-radius: 51px;
+  height: 54px;
 }
 
 @media (max-width: 700px) {

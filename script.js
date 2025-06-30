@@ -180,3 +180,13 @@ document.querySelectorAll('.category').forEach(item => {
 
 // Load default category
 showCategory('biscuits');
+
+
+
+ window.onload = function () {
+    // This runs **after all images, fonts, CSS, and assets are fully loaded**
+    console.log("Page fully loaded with all images!");
+
+    // You can now safely trigger animations, enable scrolling, etc.
+    document.body.classList.add("loaded");
+  };
