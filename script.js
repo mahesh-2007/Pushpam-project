@@ -87,3 +87,96 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+
+
+const products = {
+  biscuits: [
+    { img: "biscuits/1.jpg" },
+    { img: "biscuits/2.jpg" },
+    { img: "biscuits/3.jpg" },
+    { img: "biscuits/4.png" },
+    { img: "biscuits/5.jpg" },
+    { img: "biscuits/6.jpg" },
+    { img: "biscuits/7.jpg" },
+    { img: "biscuits/8.jpg" },
+    { img: "biscuits/9.jpg" },
+    { img: "biscuits/10.jpg" },
+    { img: "biscuits/11.jpg" },
+    { img: "biscuits/12.jpg" },
+    { img: "biscuits/13.jpg" },
+    { img: "biscuits/14.jpg" },
+    { img: "biscuits/b1.jpg" },
+    { img: "biscuits/b2.jpg" },
+    { img: "biscuits/b3.jpg" },
+    { img: "biscuits/b4.webp" },
+    { img: "biscuits/bb1.jpg" },
+    { img: "biscuits/bb2.jpg" },
+    { img: "biscuits/bb3.jpg" },
+    { img: "biscuits/bb4.jpg" },
+    { img: "biscuits/bb5.jpg" },
+    { img: "biscuits/bb6.jpg" },
+   { img: "biscuits/bb7.jpg" },
+    { img: "biscuits/bb8.jpg" },
+    { img: "biscuits/bb9.jpg" },
+  ],
+  dairy: [
+        { img: "bingo/1 (1).webp" },
+         {img: "bingo/1 (2).webp" },
+         {img: "bingo/1 (2).jpg" },
+         {img: "bingo/1 (3).webp" },
+         {img: "bingo/1 (3).jpg" },
+         {img: "bingo/1 (4).jpg" },
+         {img: "bingo/1 (5).webp" },
+         {img: "bingo/1 (5).jpg" },
+         {img: "bingo/1 (6).webp" },
+         {img: "bingo/1 (7).webp" },
+         {img: "bingo/1 (8).webp" },
+
+       
+  ],
+  snacks: [
+        
+          {img: "chocp/2 (1).jpg" }, 
+          {img: "chocp/2 (1).webp" },         
+          {img: "chocp/2 (2).jpg" }, 
+          {img: "chocp/2 (2).webp" }, 
+          {img: "chocp/2 (3).webp" }, 
+          {img: "chocp/2 (4).jpg" }, 
+          {img: "chocp/2 (4).webp" }, 
+          {img: "chocp/2 (5).jpg" }, 
+          {img: "chocp/2 (5).webp" }, 
+          {img: "chocp/2 (6).jpg" }, 
+          {img: "chocp/2 (6).webp" }, 
+          {img: "chocp/2 (7).jpg" }, 
+          {img: "chocp/2 (7).webp" }, 
+          {img: "chocp/2 (8).jpg" }, 
+          {img: "chocp/2 (8).webp" }, 
+          {img: "chocp/2 (9).jpg" }, 
+          {img: "chocp/2 (10).jpg" }, 
+          {img: "chocp/2 (11).jpg" }, 
+        ]
+};
+
+function showCategory(category) {
+  const container = document.getElementById('product-container');
+  container.innerHTML = '';
+
+  products[category].forEach(item => {
+    container.innerHTML += `
+      <div class="product">
+        <img src="${item.img}" alt="${item.name}">
+       
+      </div>
+    `;
+  });
+}
+
+document.querySelectorAll('.category').forEach(item => {
+  item.addEventListener('mouseover', () => {
+    const category = item.getAttribute('data-category');
+    showCategory(category);
+  });
+});
+
+// Load default category
+showCategory('biscuits');
