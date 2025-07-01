@@ -106,7 +106,8 @@ section {
   box-shadow: 0 2px 12px rgba(44,62,80,0.08);
   box-sizing: border-box;
   text-align: center;
-  scroll-margin-top: 80px; /* Adjust to your navbar height */
+  
+  scroll-margin-top: 100px; /* Adjust to your navbar height */
 }
 .logo {
   margin-bottom: 1em;
@@ -306,7 +307,7 @@ section {
     padding: 0.5em 0;
   }
   .brand-card {
-    width: 90vw;
+    width: 68vw;
     max-width: 320px;
     min-height: 100px;
   }
@@ -425,6 +426,9 @@ section {
 
 .my-swiper .swiper-button-prev {
   display: none; /* Move prev arrow further left */
+}
+.slide-overlay{
+  height: 80%;
 }
 }
 
@@ -602,11 +606,11 @@ height: 50vh;
   color: white;
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  gap: 27px;
   padding-top: 20px;
   border-radius: 10px 0 0 0;
   justify-content: center;
-
+  align-items: center;
 }
 
 .category {

@@ -190,3 +190,6 @@ showCategory('biscuits');
     // You can now safely trigger animations, enable scrolling, etc.
     document.body.classList.add("loaded");
   };
+
+
+  
