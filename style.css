@@ -256,6 +256,9 @@ section {
     min-height: 120px;
     padding: 1em 1em 0.8em 1em;
   }
+   .swiper{
+    width: 300px;
+  }
 }
 @media (max-width: 700px) {
   .nav-container {
@@ -265,6 +268,7 @@ section {
   .hamburger {
     display: flex;
   }
+   
   .nav-links {
     display: none;
     flex-direction: column;
@@ -311,11 +315,16 @@ section {
     max-width: 320px;
     min-height: 100px;
   }
+  
+ 
 }
 @media (max-width: 500px) {
   .custom-card { width: 95vw; padding: 1em 0.5em; }
   .custom-card .imgbox img { width: 120px; height: 80px; }
   .swiper { max-width: 98vw; }
+  .swiper{
+    width: 100%;
+  }
 }
 @media (max-width: 600px) {
   .founder-box {
@@ -452,6 +461,7 @@ section {
   z-index: 1;
   border-radius: 0 0 24px 24px;
   overflow: hidden;
+  top: 21px;
 }
 
 .banner-img {
@@ -469,6 +479,7 @@ section {
     max-height: 320px;
     border-radius: 0 0 12px 12px;
     margin: 64px 0;
+    top: 10px;
   }
 
   .banner-img {
@@ -505,7 +516,7 @@ a{
   background-color: #163346;
 }
 .contact-section{
-height: 50vh;
+height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
