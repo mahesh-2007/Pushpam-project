@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
         slidesPerView: 1
       },
       
-      900: {
+      1000: {
         slidesPerView: 3
       }
       
@@ -91,69 +91,67 @@ document.addEventListener('DOMContentLoaded', function() {
 
 const products = {
   biscuits: [
-    { img: "biscuits/1.jpg" },
-    { img: "biscuits/2.jpg" },
-    { img: "biscuits/3.jpg" },
-    { img: "biscuits/4.png" },
-    { img: "biscuits/5.jpg" },
-    { img: "biscuits/6.jpg" },
-    { img: "biscuits/7.jpg" },
-    { img: "biscuits/8.jpg" },
-    { img: "biscuits/9.jpg" },
-    { img: "biscuits/10.jpg" },
-    { img: "biscuits/11.jpg" },
-    { img: "biscuits/12.jpg" },
-    { img: "biscuits/13.jpg" },
-    { img: "biscuits/14.jpg" },
-    { img: "biscuits/b1.jpg" },
-    { img: "biscuits/b2.jpg" },
-    { img: "biscuits/b3.jpg" },
-    { img: "biscuits/b4.webp" },
-    { img: "biscuits/bb1.jpg" },
-    { img: "biscuits/bb2.jpg" },
-    { img: "biscuits/bb3.jpg" },
-    { img: "biscuits/bb4.jpg" },
-    { img: "biscuits/bb5.jpg" },
-    { img: "biscuits/bb6.jpg" },
-   { img: "biscuits/bb7.jpg" },
-    { img: "biscuits/bb8.jpg" },
-    { img: "biscuits/bb9.jpg" },
+    {name: "Dark fantasy" , img: "biscuits/1.jpg" },
+    {name: "50-50" , img: "biscuits/2.jpg" },
+    {name: "Goodday" , img: "biscuits/3.jpg" },
+    {name: "Pure Magic (Vanilla)" , img: "biscuits/4.png" },
+    
+    {name: "Pure Magic (Chocolate)" , img: "biscuits/20.webp"},
+    {name: "Bourbon" , img: "biscuits/5.jpg" },
+    {name: "Goodday (Pista)" , img: "biscuits/6.jpg" },
+    {name: "Marie Gold" , img: "biscuits/9.jpg" },
+    {name: "Milk bikies Classic" , img: "biscuits/10.jpg" },
+    {name: "Milk bikies" , img: "biscuits/11.jpg" },
+    {name: "Nutri Choice" , img: "biscuits/12.jpg" },
+    {name: "Pure Magic (chocolate)" , img: "biscuits/14.jpg" },
+    {name: "Super Millets " , img: "biscuits/b1.jpg" },
+    {name: "Super Millets (Chocolate)" , img: "biscuits/b2.jpg" },
+    {name: "Bounce (Chocolate)" , img: "biscuits/b3.jpg" },
+    {name: "Bounce (orange)" , img: "biscuits/b4.webp" },
+    {name: "Marie light" , img: "biscuits/bb1.jpg" },
+    {name: "Dark fantasy bourbon" , img: "biscuits/bb2.jpg" },
+    {name: "Dark fantasy (sandwich)" , img: "biscuits/bb4.jpg" },
+    {name: "DreamCream (Chocolate)" , img: "biscuits/bb5.jpg" },
+    {name: "DreamCream (Strawberry)" , img: "biscuits/bb6.jpg" },
+    {name: "Moms magic (Fruit nd Milk)" , img: "biscuits/bb7.jpg" },
+    {name: "Moms magic (Butter)" , img: "biscuits/bb8.jpg" },
+    {name: "Moms magic (Cashew nd Almond)" , img: "biscuits/bb9.jpg" },
   ],
   dairy: [
-        { img: "bingo/1 (1).webp" },
-         {img: "bingo/1 (2).webp" },
-         {img: "bingo/1 (2).jpg" },
-         {img: "bingo/1 (3).webp" },
-         {img: "bingo/1 (3).jpg" },
-         {img: "bingo/1 (4).jpg" },
-         {img: "bingo/1 (5).webp" },
-         {img: "bingo/1 (5).jpg" },
-         {img: "bingo/1 (6).webp" },
-         {img: "bingo/1 (7).webp" },
-         {img: "bingo/1 (8).webp" },
+         {name: "Bingo (hot nd spicy)" , img: "bingo/1 (1).webp" },
+         {name: "Bingo (masala)" , img: "bingo/1 (2).webp" },
+         {name: "Bingo (Mad angles)" , img: "bingo/1 (2).jpg" },
+         {name: "Bingo (Cream nd onion)" , img: "bingo/1 (3).webp" },
+         {name: "Bingo (Mad angles)" , img: "bingo/1 (3).jpg" },
+         {name: "Bingo (Mad angles)" , img: "bingo/1 (4).jpg" },
+         {name: "Bingo Originals (tomato)" , img: "bingo/1 (5).webp" },
+         {name: "Bingo Originals (chilli)" , img: "bingo/1 (5).jpg" },
+         {name: "Bingo (Mad angles)" , img: "bingo/1 (6).webp" },
+         {name: "Bingo (Mad angles)" , img: "bingo/1 (7).webp" },
+         {name: "Bingo (Tedhe Medhe)" , img: "bingo/1 (8).webp" },
 
        
   ],
   snacks: [
         
-          {img: "chocp/2 (1).jpg" }, 
-          {img: "chocp/2 (1).webp" },         
-          {img: "chocp/2 (2).jpg" }, 
-          {img: "chocp/2 (2).webp" }, 
-          {img: "chocp/2 (3).webp" }, 
-          {img: "chocp/2 (4).jpg" }, 
-          {img: "chocp/2 (4).webp" }, 
-          {img: "chocp/2 (5).jpg" }, 
-          {img: "chocp/2 (5).webp" }, 
-          {img: "chocp/2 (6).jpg" }, 
-          {img: "chocp/2 (6).webp" }, 
-          {img: "chocp/2 (7).jpg" }, 
-          {img: "chocp/2 (7).webp" }, 
-          {img: "chocp/2 (8).jpg" }, 
-          {img: "chocp/2 (8).webp" }, 
-          {img: "chocp/2 (9).jpg" }, 
-          {img: "chocp/2 (10).jpg" }, 
-          {img: "chocp/2 (11).jpg" }, 
+          {name : "Diary Milk Silk (Hazzelnut)" , img: "chocp/2 (1).jpg" }, 
+            {name : "Diary Milk Silk (Almond)" , img: "chocp/2 (2).jpg" }, 
+         {name : "Perk" , img: "chocp/2 (4).jpg" }, 
+          {name : "5 Star" , img: "chocp/2 (5).jpg" },  
+         {name : "Cavins shake (Coffee)" , img: "chocp/2 (1).webp" },         
+          {name : "Cavins shake (Chocolate)" , img: "chocp/2 (2).webp" }, 
+          {name : "Cavins shake (Butterscotch)" , img: "chocp/2 (3).webp" }, 
+             {name : "Cavins shake (Vanilla)" , img: "chocp/2 (6).webp" }, 
+         {name : "Cavins shake (Strawberry)" , img: "chocp/2 (7).webp" }, 
+         
+          {name : "Cavins shake (Belgian Chocolate)" , img: "chocp/2 (4).webp" }, 
+          
+          {name : "Winkin Cow (Chocolate)" , img: "chocp/2 (6).jpg" }, 
+        {name : "Winkin Cow (Badammilk)" , img: "chocp/2 (7).jpg" }, 
+           {name : "Winkin Cow (ColdCoffee)" , img: "chocp/2 (8).jpg" }, 
+          {name : "Winkin Cow (Bourbon)" , img: "chocp/2 (9).jpg" }, 
+          {name : "Winkin Cow (Strawberry)" , img: "chocp/2 (10).jpg" }, 
+          {name : "Winkin Cow (Vanilla)" , img: "chocp/2 (11).jpg" }, 
         ]
 };
 
@@ -165,7 +163,7 @@ function showCategory(category) {
     container.innerHTML += `
       <div class="product">
         <img src="${item.img}" alt="${item.name}">
-       
+       <div class="product-name">${item.name}</div>
       </div>
     `;
   });
