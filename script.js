@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
     spaceBetween: 30,
     loop: true,
     autoplay: {
-      delay: 3000,
+      delay: 6000,
       disableOnInteraction: false,
     },
     pagination: {
@@ -74,17 +74,19 @@ document.addEventListener('DOMContentLoaded', function() {
     },
     centeredSlides: true,
     breakpoints: {
-      // For screens 0px and up, show 1 slide
-      0: {
-        slidesPerView: 1,
-        centeredSlides: false
-      },
-      // For screens 768px and up, show 3 slides
-      768: {
-        slidesPerView: 3,
-        centeredSlides: true
+        0: {
+          slidesPerView: 1,
+          centeredSlides: false
+        },
+        768: {
+          slidesPerView: 2,
+          centeredSlides: true
+        },
+        1000: {
+          slidesPerView: 3,
+          centeredSlides: true
+        }
       }
-    }
   });
 });
 
@@ -178,6 +180,7 @@ document.querySelectorAll('.category').forEach(item => {
 
 // Load default category
 showCategory('biscuits');
+
 
 
 
