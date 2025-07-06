@@ -193,4 +193,10 @@ showCategory('biscuits');
   };
 
 
-  
+  window.addEventListener("load", function () {
+  const loader = document.getElementById("loader");
+  const content = document.getElementById("content");
+
+  loader.style.display = "none";   // Hide loader
+  content.style.display = "block"; // Show content
+});
