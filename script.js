@@ -200,3 +200,17 @@ showCategory('biscuits');
   loader.style.display = "none";   // Hide loader
   content.style.display = "block"; // Show content
 });
+
+
+window.addEventListener('load', AOS.refresh);
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const offset = 70; // adjust for navbar height
+    const target = document.querySelector(this.getAttribute('href'));
+    const top = target.offsetTop - offset;
+    window.scrollTo({ top, behavior: 'smooth' });
+  });
+});
+

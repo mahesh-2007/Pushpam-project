@@ -88,6 +88,7 @@ main {
   max-width: 100%;
   margin: 0 auto;
   padding: 0 1em;
+  
 }
 section {
   width: 100%;
@@ -95,12 +96,13 @@ section {
   margin: 10em 0;
   background-color: #163346;
   border-radius: 16px;
-  padding: 2em 1em;
+  padding: 9em 1em;
   box-shadow: 0 2px 12px rgba(44,62,80,0.08);
   box-sizing: border-box;
   text-align: center;
+  margin-top: 10px;
   
-  scroll-margin-top: 100px; /* Adjust to your navbar height */
+  scroll-margin-top: 80px; /* Adjust to your navbar height */
 }
 .logo {
   margin-bottom: 1em;
@@ -696,4 +698,9 @@ height: 90vh;
   to {
     transform: rotate(360deg);
   }
+}
+
+.ct{
+  position: relative;
+  top: 10px;
 }
